@@ -6,6 +6,16 @@
 <title>Nosso Lar, Nosso Sonho — Adrielly &amp; Filipe</title>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
 <style>
+    .filter-button[aria-pressed="true"] {
+    background: #233b59 !important;
+    color: white !important;
+    border-color: #233b59 !important;
+}
+
+.filter-button[aria-pressed="false"] {
+    background: white !important;
+    color: #233b59 !important;
+}
     :root { --navy:#233b59; --muted:#61748b; --cream:#faf8f3; --line:#dce5ea; --blue:#dceaf1; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
@@ -95,8 +105,7 @@
 <h2 class="canva-text m-0 font-semibold" data-template-id="gifts-title" id="gifts-title" style="color: rgb(35, 59, 89); font-weight: 600; font-style: normal; font-size: 24px;">Presentes para o nosso lar</h2>
 <p class="canva-text mt-3 mb-0" data-template-id="gifts-message" style="color: rgb(83, 107, 128); font-weight: 400; font-style: normal; font-size: 20px;">Cada contribuição é um pedacinho da nossa história. Escolha um presente ou veja todos em Outros.</p>
 </div>
-<div aria-label="Filtrar presentes por categoria" class="flex flex-wrap justify-center gap-2 mb-8" role="group"><button aria-pressed="false" class="canva-button filter-button" data-category="Cozinha" data-template-id="filter-kitchen" style="background:white;color:#233b59;" type="button">Cozinha</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Quarto" data-template-id="filter-bedroom" style="background:white;color:#233b59;" type="button">Quarto</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Sala" data-template-id="filter-living" style="background:white;color:#233b59;" type="button">Sala</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Banheiro" data-template-id="filter-bathroom" style="background:white;color:#233b59;" type="button">Banheiro</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Lavanderia" data-template-id="filter-laundry" style="background:white;color:#233b59;" type="button">Lavanderia</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Decoração" data-template-id="filter-decor" style="background:white;color:#233b59;" type="button">Decoração</button> <button aria-pressed="true" class="canva-button filter-button" data-category="Outros" data-template-id="filter-other" style="background:#233b59;color:white;" type="button">Outros</button>
-</div>
+<div aria-label="Filtrar presentes por categoria" class="flex flex-wrap justify-center gap-2 mb-8" role="group"><button aria-pressed="false" class="canva-button filter-button" data-category="Cozinha" data-template-id="filter-kitchen" style="background:white;color:#233b59;" type="button">Cozinha</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Quarto" data-template-id="filter-bedroom" style="background:white;color:#233b59;" type="button">Quarto</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Sala" data-template-id="filter-living" style="background:white;color:#233b59;" type="button">Sala</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Banheiro" data-template-id="filter-bathroom" style="background:white;color:#233b59;" type="button">Banheiro</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Lavanderia" data-template-id="filter-laundry" style="background:white;color:#233b59;" type="button">Lavanderia</button> <button aria-pressed="false" class="canva-button filter-button" data-category="Decoração" data-template-id="filter-decor" style="background:white;color:#233b59;" type="button">Decoração</button> <button aria-pressed="true" class="canva-button filter-button" data-category="Outros" data-template-id="filter-other" type="button">Todos</button>
 <p class="canva-text text-center py-12" data-template-id="empty-category" hidden="" id="empty-category" style="color: rgb(97, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Esta categoria ainda não tem presentes. Em breve, poderá receber novos itens.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="gift-grid">
 <article class="canva-card gift-card" data-category="Cozinha" data-template-id="gift-spoons" style="background: rgb(255, 255, 255);">
