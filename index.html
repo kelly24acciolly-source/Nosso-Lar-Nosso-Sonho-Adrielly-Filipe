@@ -180,11 +180,29 @@
 <div class="canva-panel max-w-3xl mx-auto rounded-2xl border p-7 md:p-12 text-center" data-template-id="pix-panel" style="background:#eaf1f4;border-color:#c7d9e2">
 <p class="canva-text uppercase tracking-[.2em] mt-0" data-template-id="pix-kicker" style="color: rgb(83, 107, 128); font-weight: 400; font-style: normal; font-size: 12px;">Um gesto de carinho</p>
 <h2 class="canva-text font-semibold mt-2" data-template-id="pix-title" id="pix-title" style="color: rgb(35, 59, 89); font-weight: 600; font-style: normal; font-size: 24px;">Contribuir via Pix</h2>
-<p class="canva-text" data-template-id="pix-description" style="color: rgb(83, 107, 128); font-weight: 400; font-style: normal; font-size: 16px;">Quando os dados estiverem disponíveis, você poderá utilizá-los para fazer sua contribuição.</p>
+<p class="canva-text" data-template-id="pix-description" style="color: rgb(83, 107, 128); font-weight: 400; font-style: normal; font-size: 16px;">Escaneie o QR Code abaixo pelo aplicativo do seu banco ou copie a chave Pix para contribuir com nosso novo lar.</p>
 <div class="canva-panel bg-white rounded-xl border px-4 py-6 my-7" data-template-id="pix-key-box" style="border-color: rgb(199, 217, 226); background: rgb(255, 255, 255);">
-<p class="canva-text m-0 font-bold tracking-wide break-words" data-template-id="pix-key" style="color: rgb(35, 59, 89); font-weight: 700; font-style: normal; font-size: 16px;">CHAVE PIX A CONFIRMAR</p>
+<div style="text-align:center; margin:25px 0;">
+  <img src="qrcode-pix.jpg"
+       alt="QR Code Pix de Adrielly"
+       style="width:220px; max-width:100%; border-radius:12px;">
+
+  <p style="margin-top:18px; font-weight:bold; color:#233b59;">
+    Chave Pix: (81) 98434-9981
+  </p>
+
+  <p style="color:#61748b;">
+    Adrielly Alves da Silva Santos — Banco Inter
+  </p>
+
+  <button type="button"
+          onclick="navigator.clipboard.writeText('81984349981').then(() => alert('Chave Pix copiada!')).catch(() => alert('Não foi possível copiar automaticamente.'))"
+          style="background:#233b59; color:white; padding:12px 24px; border:none; border-radius:8px; cursor:pointer;">
+    Copiar chave Pix
+  </button>
 </div>
-<p class="canva-text mb-0" data-template-id="pix-disclaimer" style="color: rgb(83, 107, 128); font-weight: 400; font-style: normal; font-size: 16px;">Os dados para contribuição serão confirmados em breve. Nenhum pagamento é realizado neste site.</p>
+</div>
+<p class="canva-text mb-0" data-template-id="pix-disclaimer" style="color: rgb(83, 107, 128); font-weight: 400; font-style: normal; font-size: 16px;">Antes de concluir sua contribuição, confira no aplicativo do banco se o destinatário é Adrielly Alves da Silva Santos.</p>
 </div>
 </div>
 </section>
