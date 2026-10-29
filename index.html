@@ -98,6 +98,37 @@
 </div>
 </div>
 </section>
+<section id="informacoes" style="background:#faf8f3; padding:55px 20px; text-align:center; color:#233b59;">
+
+  <h2 style="font-size:30px; margin-bottom:12px;">
+    Nosso Encontro Especial 💙
+  </h2>
+
+  <p>Esperamos você para celebrar nosso novo lar!</p>
+
+  <h3>📅 Data e horário</h3>
+  <p>Sábado, 14 de novembro de 2026</p>
+  <p>Às 14h</p>
+
+  <h3>🏡 Local da festa</h3>
+  <p>Casa da mãe do Filipe</p>
+  <p>Rua Zulmira Poligario, nº 17</p>
+  <p>Centro, Abreu e Lima - PE</p>
+
+  <a href="https://www.google.com/maps/search/?api=1&query=Rua+Zulmira+Poligario+17+Centro+Abreu+e+Lima+PE"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-block; margin:20px 0; padding:14px 28px; background:#233b59; color:white; border-radius:30px; text-decoration:none;">
+    📍 Como chegar
+  </a>
+
+  <h3>✨ Programação</h3>
+  <p>14h — Recepção dos convidados</p>
+  <p>15h — Chá da tarde</p>
+  <p>16h — Momento de celebração</p>
+  <p>18h — Encerramento previsto</p>
+
+</section>
 <section aria-labelledby="gifts-title" class="py-16 md:py-20" id="presentes" style="background:#f6f8f7">
 <div class="content-width">
 <div class="text-center mb-10">
@@ -206,6 +237,62 @@
 </div>
 </div>
 </section>
+<section id="confirmacao" style="background:#faf8f3; padding:50px 20px; text-align:center; color:#233b59;">
+
+  <h2 style="font-size:30px; margin-bottom:15px;">
+    Confirme sua presença 💙
+  </h2>
+
+  <p style="margin-bottom:25px;">
+    Ficaremos muito felizes em celebrar esse momento com você!
+  </p>
+
+  <label for="nomeConvidado" style="display:block; margin-bottom:10px;">
+    Digite seu nome:
+  </label>
+
+  <input
+    type="text"
+    id="nomeConvidado"
+    placeholder="Seu nome completo"
+    autocomplete="name"
+    style="padding:14px; width:100%; max-width:350px; border:1px solid #233b59; border-radius:10px; font-size:16px;"
+  >
+
+  <br>
+
+  <button
+    type="button"
+    onclick="confirmarPresenca()"
+    style="margin-top:20px; padding:15px 30px; background:#233b59; color:white; border:none; border-radius:30px; font-size:16px; cursor:pointer;"
+  >
+    💌 Confirmar pelo WhatsApp
+  </button>
+
+</section>
+
+<script>
+function confirmarPresenca() {
+  const nome = document.getElementById("nomeConvidado").value.trim();
+
+  if (!nome) {
+    alert("Por favor, digite seu nome antes de confirmar!");
+    return;
+  }
+
+  const mensagem =
+    "Olá, Adrielly! 💙🏡\n" +
+    "Confirmo minha presença no chá de casa nova de vocês, no dia 14 de novembro!\n" +
+    "Meu nome é: " + nome;
+
+  const telefone = "5581984349981";
+
+  const link = "https://api.whatsapp.com/send?phone=" +
+    telefone + "&text=" + encodeURIComponent(mensagem);
+
+  window.open(link, "_blank", "noopener,noreferrer");
+}
+</script>
 </main>
 <footer class="canva-footer border-t py-7 text-center" data-template-id="site-footer" style="background:#faf8f3;border-color:#dce5ea">
 <p class="canva-text m-0" data-template-id="footer-message" style="color: rgb(83, 107, 128); font-weight: 400; font-style: normal; font-size: 16px;">Com carinho, Adrielly &amp; Filipe ♡</p>
