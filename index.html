@@ -98,35 +98,210 @@
 </div>
 </div>
 </section>
-<section id="informacoes" style="background:#faf8f3; padding:55px 20px; text-align:center; color:#233b59;">
 
-  <h2 style="font-size:30px; margin-bottom:12px;">
-    Nosso Encontro Especial 💙
-  </h2>
+<!-- Informações do chá de casa nova -->
+<section id="informacoes" style="background:#f3f3f3; padding:55px 20px 65px; color:#233b59;">
 
-  <p>Esperamos você para celebrar nosso novo lar!</p>
+  <style>
+    #informacoes {
+      font-family: 'DM Sans', sans-serif;
+    }
 
-  <h3>📅 Data e horário</h3>
-  <p>Sábado, 14 de novembro de 2026</p>
-  <p>Às 14h</p>
+    #informacoes .titulo-encontro {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(42px, 6vw, 64px);
+      font-weight: 400;
+      text-align: center;
+      line-height: 1.2;
+      margin: 0 0 8px;
+    }
 
-  <h3>🏡 Local da festa</h3>
-  <p>Casa da mãe do Filipe</p>
-  <p>Rua Zulmira Poligario, nº 17</p>
-  <p>Centro, Abreu e Lima - PE</p>
+    #informacoes .subtitulo-encontro {
+      font-family: 'Alegreya', serif;
+      font-style: italic;
+      font-size: 19px;
+      text-align: center;
+      margin-bottom: 28px;
+    }
 
-  <a href="https://www.google.com/maps/search/?api=1&query=Rua+Zulmira+Poligario+17+Centro+Abreu+e+Lima+PE"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="display:inline-block; margin:20px 0; padding:14px 28px; background:#233b59; color:white; border-radius:30px; text-decoration:none;">
-    📍 Como chegar
-  </a>
+    #informacoes .cartoes-encontro {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 42px;
+    }
 
-  <h3>✨ Programação</h3>
-  <p>14h — Recepção dos convidados</p>
-  <p>15h — Chá da tarde</p>
-  <p>16h — Momento de celebração</p>
-  <p>18h — Encerramento previsto</p>
+    #informacoes .cartao-encontro {
+      background: #262626;
+      color: #fff;
+      width: 150px;
+      min-height: 100px;
+      border-radius: 13px;
+      border: 1px solid #777;
+      box-shadow: inset 0 0 7px #555;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-family: 'Alegreya', serif;
+    }
+
+    #informacoes .cartao-encontro strong {
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    #informacoes .detalhes-encontro {
+      max-width: 850px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    #informacoes .titulo-detalhe {
+      font-family: 'Alegreya', serif;
+      font-size: 23px;
+      font-weight: 400;
+      margin-bottom: 22px;
+    }
+
+    #informacoes .linha-horario {
+      display: grid;
+      grid-template-columns: 45px 1fr;
+      gap: 12px;
+      margin-bottom: 18px;
+      font-family: 'Alegreya', serif;
+    }
+
+    #informacoes .linha-horario strong {
+      font-size: 21px;
+      font-weight: 400;
+    }
+
+    #informacoes .linha-horario span {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    #informacoes .local-encontro {
+      text-align: center;
+      font-family: 'Alegreya', serif;
+    }
+
+    #informacoes .local-encontro h3 {
+      font-size: 27px;
+      font-weight: 400;
+      margin: 8px 0;
+    }
+
+    #informacoes .local-encontro p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    #informacoes .botao-mapa {
+      display: inline-block;
+      margin-top: 24px;
+      background: #233b59;
+      color: white;
+      padding: 13px 28px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 650px) {
+      #informacoes .cartoes-encontro {
+        gap: 10px;
+      }
+
+      #informacoes .cartao-encontro {
+        width: 105px;
+        min-height: 90px;
+      }
+
+      #informacoes .detalhes-encontro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      #informacoes .titulo-detalhe {
+        text-align: center;
+      }
+    }
+  </style>
+
+  <h2 class="titulo-encontro">Nosso encontro especial</h2>
+
+  <p class="subtitulo-encontro">
+    Um novo lar, muitos sonhos e pessoas especiais para celebrar conosco.
+  </p>
+
+  <div class="cartoes-encontro">
+    <div class="cartao-encontro">
+      <span>▦</span>
+      <strong>14/11</strong>
+    </div>
+
+    <div class="cartao-encontro">
+      <span>◷</span>
+      <strong>14h</strong>
+    </div>
+
+    <div class="cartao-encontro">
+      <span>♡</span>
+      <strong>2026</strong>
+      <span>Nosso Chá</span>
+    </div>
+  </div>
+
+  <div class="detalhes-encontro">
+
+    <div>
+      <h3 class="titulo-detalhe">Programação</h3>
+
+      <div class="linha-horario">
+        <strong>14h</strong>
+        <span>Boas-vindas<br>Recepção dos convidados</span>
+      </div>
+
+      <div class="linha-horario">
+        <strong>15h</strong>
+        <span>Chá da tarde<br>Delícias preparadas com carinho</span>
+      </div>
+
+      <div class="linha-horario">
+        <strong>16h</strong>
+        <span>Momentos especiais<br>Conversas, fotos e celebração</span>
+      </div>
+
+      <div class="linha-horario">
+        <strong>18h</strong>
+        <span>Encerramento<br>Com muitas lembranças felizes</span>
+      </div>
+    </div>
+
+    <div class="local-encontro">
+      <span style="font-size:26px; color:#26759b;">⌖</span>
+      <h3>Local do Chá</h3>
+      <p>Rua Zulmira Poligario, nº 17</p>
+      <p>Centro — Abreu e Lima/PE</p>
+
+      <a class="botao-mapa"
+         href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Zulmira+Poligario+17+Centro+Abreu+e+Lima+PE"
+         target="_blank"
+         rel="noopener noreferrer">
+        COMO CHEGAR
+      </a>
+    </div>
+
+  </div>
 
 </section>
 <section aria-labelledby="gifts-title" class="py-16 md:py-20" id="presentes" style="background:#f6f8f7">
